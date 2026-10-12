@@ -1,0 +1,16 @@
+{
+  "name": "ticketdesk",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Help desk ticketing app: React + TypeScript client, Express + TypeScript API, SQLite storage",
+  "workspaces": ["server", "client"],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "dev:server": "npm run dev -w server",
+    "dev:client": "npm run dev -w client",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "engines": { "node": ">=22.13" }
+}
